@@ -1,0 +1,26 @@
+{
+  "config": {
+    "branch": "master",
+    "domain": "https://azltt.github.io",
+    "email": "1162480235@qq.com",
+    "platform": "github",
+    "repository": "azltt.github.io",
+    "token": "daa268eaa1b766dd4a1000ea37c6b01f737c5ba6",
+    "username": "azltt"
+  },
+  "comment": {
+    "commentPlatform": "gitalk",
+    "disqusSetting": {
+      "api": "",
+      "apikey": "",
+      "shortname": ""
+    },
+    "gitalkSetting": {
+      "clientId": "db1e62ad869653d932d8",
+      "clientSecret": "50f37b2b9364d8f92d6eba7067274efff87774e1",
+      "owner": "azltt",
+      "repository": "azltt.github.io"
+    },
+    "showComment": true
+  }
+}

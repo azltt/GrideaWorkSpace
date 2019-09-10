@@ -1,0 +1,35 @@
+{
+  "config": {
+    "archivesPageSize": 50,
+    "dateFormat": "YYYY-MM-DD",
+    "feedCount": 10,
+    "feedFullText": false,
+    "footerInfo": "Powered by <a href=\"https://github.com/azltt/azltt.github.io\" target=\"_blank\">Gridea</a>",
+    "postPageSize": 10,
+    "postUrlFormat": "SLUG",
+    "showFeatureImage": true,
+    "siteDescription": "三省吾身",
+    "siteName": "Andy's Blog",
+    "tagUrlFormat": "SHORT_ID",
+    "themeName": "notes"
+  },
+  "customConfig": {
+    "contentBgColor": "#ffffff",
+    "contentMaxWidth": "800px",
+    "customCss": "",
+    "facebook": "",
+    "ga": "",
+    "github": "https://github.com/azltt",
+    "linkColor": "rgba(0,0,0,.98)",
+    "linkHoverColor": "#006CFF",
+    "openPostToc": true,
+    "pageBgColor": "#ffffff",
+    "siteFont": "-apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei',sans-serif",
+    "textColor": "rgba(0, 0, 0, 0.86)",
+    "textSize": "16px",
+    "titleAlign": "center",
+    "twitter": "",
+    "weibo": "",
+    "zhihu": ""
+  }
+}

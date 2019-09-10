@@ -1,0 +1,171 @@
+{
+  "posts": [
+    {
+      "content": "\n昨晚心情确实不太好，想了很久，感觉说起话来不能太嗨，言多必失啊。\n说起来容易，做起来感觉还是很难。尽力吧。",
+      "data": {
+        "title": "心情随笔",
+        "date": "2019-09-10 09:58:36",
+        "tags": [
+          "随笔"
+        ],
+        "published": true,
+        "hideInList": false,
+        "feature": null
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "xin-qing-sui-bi"
+    },
+    {
+      "content": "centos7无法链接wifi\n\n输入以下代码：\n# rfkill unblock all\n# rfkill list\n# modprobe -r ideapad_laptop\n\n这样就解决 NO WIFI adapter found.\n",
+      "data": {
+        "title": "centos7无法链接wifi",
+        "date": "2019-09-08 17:16:44",
+        "tags": [],
+        "published": true,
+        "hideInList": false,
+        "feature": null
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "centos7-wu-fa-lian-jie-wifi"
+    },
+    {
+      "content": "强制删除文件及文件夹命令\n<!-- more -->\n删除文件或目录CMD命令：\nrd/s/q 盘符:\\某个文件夹  （强制删除文件文件夹和文件夹内所有文件）\ndel/f/s/q 盘符:\\文件名  （强制删除文件，文件名必须加文件后缀名）",
+      "data": {
+        "title": "Windows命令+",
+        "date": "2019-09-06 10:16:18",
+        "tags": [],
+        "published": true,
+        "hideInList": false,
+        "feature": "https://bing.ioliu.cn/v1/rand"
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "强制删除文件及文件夹命令",
+      "fileName": "windows-ming-ling"
+    },
+    {
+      "content": "* 1\nSELECT COLLATIONPROPERTY('Chinese_PRC_Stroke_CI_AI_KS_WS', 'CodePage')\n下面是查询结果：\n936 简体中文GBK\n950 繁体中文BIG5\n437 美国/加拿大英语\n932 日文\n949 韩文\n866 俄文\n65001 unicode UFT-8\n* 2\nuse master\nselect SERVERPROPERTY(N'edition') as Edition --数据版本，如企业版、开发版等\n,SERVERPROPERTY(N'collation') as Collation --数据库字符集\n,@@VERSION as Version --数据库版本号\n,@@LANGUAGE AS Language --数据库使用的语言，如us_english等\n,SERVERPROPERTY(N'servername') as ServerName --服务名\n* 333\nSELECT a.NAME AS 表名,b.NAME AS 列名,a.COLLATION FROM syscolumns a,sysobjects b\nWHERE a.id=b.id  and b.NAME='tcr0021'  ORDER BY 3 desc",
+      "data": {
+        "title": "查询SQL Server字符集",
+        "date": "2019-09-05 09:32:52",
+        "tags": [],
+        "published": true,
+        "hideInList": false,
+        "feature": "https://uploadbeta.com/api/pictures/random"
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "cha-xun-sql-server-zi-fu-ji"
+    },
+    {
+      "content": "记录一些有关shiro的注解：\n<!-- more -->\n**@RequiresAuthentication**\n验证用户是否登录，等同于方法subject.isAuthenticated() 结果为true时。\n\n**@RequiresUser**\n验证用户是否被记忆，user有两种含义：\n一种是成功登录的（subject.isAuthenticated() 结果为true）；\n另外一种是被记忆的（subject.isRemembered()结果为true）。\n\n**@RequiresGuest**\n验证是否是一个guest的请求，与@RequiresUser完全相反。\n 换言之，RequiresUser  == !RequiresGuest。\n此时subject.getPrincipal() 结果为null.\n\n**@RequiresRoles**\n例如：@RequiresRoles(\"aRoleName\");\n  void someMethod();\n如果subject中有aRoleName角色才可以访问方法someMethod。如果没有这个权限则会抛出异常AuthorizationException。\n\n**@RequiresPermissions**\n例如： @RequiresPermissions({\"file:read\", \"write:aFile.txt\"} )\n  void someMethod();\n\n要求subject中必须同时含有file:read和write:aFile.txt的权限才能执行方法someMethod()。否则抛出异常AuthorizationException。",
+      "data": {
+        "title": "shiro注解",
+        "date": "2019-09-04 13:10:04",
+        "tags": [
+          "shiro"
+        ],
+        "published": true,
+        "hideInList": false,
+        "feature": "https://source.unsplash.com/1600x900/?like"
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "记录一些有关shiro的注解：",
+      "fileName": "shiro-zhu-jie"
+    },
+    {
+      "content": "这是关于的页面，可以在这里向世界介绍你！\n",
+      "data": {
+        "title": "关于",
+        "date": "2019-01-25 19:09:48",
+        "tags": null,
+        "published": true,
+        "hideInList": true,
+        "feature": null
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "about"
+    },
+    {
+      "content": "https://source.unsplash.com/1600x900/?like\nhttp://lorempixel.com/1600/900\nhttps://bing.ioliu.cn/v1/rand 【有时候不清楚】\nhttps://unsplash.it/1600/900?random（国内加载略慢）\nhttps://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture【返回必应图片】\nhttps://uploadbeta.com/api/pictures/random/?key=%E6%8E%A8%E5%A5%B3%E9%83%8E【随机美女图片】\n",
+      "data": {
+        "title": "随机获取图片接口",
+        "date": "2018-12-21 17:16:35",
+        "tags": [],
+        "published": true,
+        "hideInList": false,
+        "feature": "https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "sui-ji-huo-qu-tu-pian-jie-kou"
+    },
+    {
+      "content": "👏  欢迎使用 **Gridea** ！  \n✍️  **Gridea** 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... \n\n<!-- more -->\n\n[Github](https://github.com/getgridea/gridea)  \n[Gridea 主页](http://hvenotes.fehey.com/)  \n[示例网站](http://fehey.com/)\n\n## 特性👇\n📝  你可以使用最酷的 **Markdown** 语法，进行快速创作  \n\n🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片  \n\n🏷️  你可以对文章进行标签分组  \n\n📋  你可以自定义菜单，甚至可以创建外部链接菜单  \n\n💻  你可以在 **𝖶𝗂𝗇𝖽𝗈𝗐𝗌** 或 **𝖬𝖺𝖼𝖮𝖲** 设备上使用此客户端  \n\n🌎  你可以使用 **𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌** 或 **Coding Pages** 向世界展示，未来将支持更多平台  \n\n💬  你可以进行简单的配置，接入 [Gitalk](https://github.com/gitalk/gitalk) 或 [DisqusJS](https://github.com/SukkaW/DisqusJS) 评论系统  \n\n🇬🇧  你可以使用**中文简体**或**英语**  \n\n🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力  \n\n🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步  \n\n🌱 当然 **Gridea** 还很年轻，有很多不足，但请相信，它会不停向前🏃\n\n未来，它一定会成为你离不开的伙伴\n\n尽情发挥你的才华吧！\n\n😘 Enjoy~\n",
+      "data": {
+        "title": "Hello Gridea",
+        "date": "2018-12-12 00:00:00",
+        "tags": [
+          "Gridea"
+        ],
+        "published": true,
+        "hideInList": false,
+        "feature": "/post-images/hello-gridea.png"
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "👏  欢迎使用 **Gridea** ！  \n✍️  **Gridea** 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... ",
+      "fileName": "hello-gridea"
+    }
+  ],
+  "tags": [
+    {
+      "index": -1,
+      "name": "随笔",
+      "slug": "9_Z4_ck5h",
+      "used": true
+    },
+    {
+      "index": -1,
+      "name": "shiro",
+      "slug": "iY4aEB-l7",
+      "used": true
+    },
+    {
+      "name": "Gridea",
+      "slug": "mlJfn8ECl",
+      "used": true
+    }
+  ],
+  "menus": [
+    {
+      "link": "/",
+      "name": "首页",
+      "openType": "Internal"
+    },
+    {
+      "link": "/archives",
+      "name": "归档",
+      "openType": "Internal"
+    },
+    {
+      "link": "/tags",
+      "name": "标签",
+      "openType": "Internal"
+    },
+    {
+      "link": "/post/about",
+      "name": "关于",
+      "openType": "Internal"
+    }
+  ]
+}
